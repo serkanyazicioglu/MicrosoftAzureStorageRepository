@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Nhea.Data.Repository.MicrosoftAzureStorageRepository</id>
+    <version>1.0.0.0</version>
+    <title>$title$</title>
+    <authors>Serkan Yazıcıoğlu</authors>
+    <owners>serkanyazicioglu</owners>
+    <licenseUrl>http://opensource.org/licenses/MS-PL</licenseUrl>
+    <projectUrl>https://github.com/serkanyazicioglu/MicrosoftAzureStorageRepository</projectUrl>
+    <iconUrl>http://github.com/contoso/UsefulStuff/nuget_icon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Microsoft Azure Storage repository classes.</description>
+    <releaseNotes>Base repository classes for Azure Storage.</releaseNotes>
+    <copyright>Copyright 2018</copyright>
+    <tags>microsoft, azure, storage, repository, nhea</tags>
+  </metadata>
+</package>
