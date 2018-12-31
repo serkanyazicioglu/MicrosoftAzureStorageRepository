@@ -102,7 +102,7 @@ namespace Nhea.Data.Repository.MicrosoftAzureStorageRepository
 
             if (filter == null)
             {
-                filter = query => 1 == 1;
+                filter = query => true;
             }
 
             return CurrentCloudTable.CreateQuery<T>().Count(filter);
@@ -117,7 +117,7 @@ namespace Nhea.Data.Repository.MicrosoftAzureStorageRepository
 
             if (filter == null)
             {
-                filter = query => 1 == 1;
+                filter = query => true;
             }
 
             return CurrentCloudTable.CreateQuery<T>().Any(filter);
@@ -160,7 +160,7 @@ namespace Nhea.Data.Repository.MicrosoftAzureStorageRepository
 
             if (filter == null)
             {
-                filter = query => 1 == 1;
+                filter = query => true;
             }
 
             IQueryable<T> returnList = CurrentCloudTable.CreateQuery<T>().Where(filter).ToList().AsQueryable();
@@ -190,7 +190,7 @@ namespace Nhea.Data.Repository.MicrosoftAzureStorageRepository
 
                 int skipCount = pageSize * pageIndex;
 
-                returnList = returnList.Skip<T>(skipCount).Take<T>(pageSize);
+                returnList = returnList.Skip(skipCount).Take(pageSize);
             }
 
             return returnList;
