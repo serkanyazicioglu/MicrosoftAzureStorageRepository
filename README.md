@@ -18,15 +18,19 @@ Install-Package Nhea.Data.Repository.MicrosoftAzureStorageRepository
 
 ### Prerequisites
 
-Project is built with .NET Framework 4.6.1. 
+Project is built with .NET Framework 4.6.1.
 
-Click the link below to download Azure Storage Explorer.
+This project references 
+-	Nhea > 1.5.1
+-	Microsoft.WindowsAzure.Storage > 9.3.2
+
+I highly suggest you to use Azure Storage Explorer. Click the link below to download.
 
 https://azure.microsoft.com/en-us/features/storage-explorer/
 
 ### Configuration
 
-First of all creating a base repository class is a good idea to set basic properties.
+First of all creating a base repository class is a good idea to set basic properties like connection string.
 
 ```
 public abstract class BaseTableRepository<T> : Nhea.Data.Repository.MicrosoftAzureStorageRepository.BaseTableStorageRepository<T> where T : TableEntity, new()
@@ -34,7 +38,7 @@ public abstract class BaseTableRepository<T> : Nhea.Data.Repository.MicrosoftAzu
     protected override string StorageConnectionString => ConfigurationManager.ConnectionStrings["StorageConnectionString"].ConnectionString;
 }
 ```
-You may remove the abstract modifier if you want to use generic repositories or you may create individual repository classes for your documents if you want to set specific properties for that object.
+You may remove the abstract modifier if you want to use generic repositories or you may create individual repository classes for your documents if you want to set specific properties.
 ```
 public partial class Member : TableEntity
 {
