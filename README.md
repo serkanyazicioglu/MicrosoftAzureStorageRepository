@@ -1,4 +1,5 @@
-[![NuGet](https://img.shields.io/nuget/v/Nhea.Data.Repository.EntityFrameworkRepository.svg)](https://www.nuget.org/packages/Nhea.Data.Repository.EntityFrameworkRepository/)
+[![Build Status](https://dev.azure.com/serkanyazicioglu/serkanyazicioglu/_apis/build/status/serkanyazicioglu.MicrosoftAzureStorageRepository?branchName=master)](https://dev.azure.com/serkanyazicioglu/serkanyazicioglu/_build/latest?definitionId=4&branchName=master)
+[![NuGet](https://img.shields.io/nuget/v/Nhea.Data.Repository.MicrosoftAzureStorageRepository.svg)](https://www.nuget.org/packages/Nhea.Data.Repository.MicrosoftAzureStorageRepository/)
 
 # Nhea Microsoft Azure Storage Repository
 
@@ -9,7 +10,11 @@ Nhea base repository classes for Microsoft Azure Storage
 
 Nhea is on NuGet. You may install Nhea Microsoft Azure Storage Repository via NuGet Package manager.
 
-https://www.nuget.org/packages/Nhea.Data.Repository.EntityFrameworkRepository/
+https://www.nuget.org/packages/Nhea.Data.Repository.MicrosoftAzureStorageRepository/
+
+```
+Install-Package Nhea.Data.Repository.MicrosoftAzureStorageRepository
+```
 
 ### Prerequisites
 
